@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Shri Arts — Handcrafted Murtis",
+  title: "Shri Arts - Handcrafted Murtis",
   description:
     "Shri Arts brings you Ganesh, Hanuman, Krishna, Shiva and Durga murtis in marble, brass, panchdhatu and fibre — handcrafted by artisans in Jaipur.",
 };

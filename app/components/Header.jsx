@@ -34,7 +34,12 @@ export default function Header() {
 
         <a href="#contact" className="nav-cta">Enquire Now</a>
 
-        <button className="menu-btn" aria-label="Menu" onClick={() => setOpen((v) => !v)}>
+        {/* Updated Button Here */}
+        <button 
+          className={`menu-btn ${open ? "open" : ""}`} 
+          aria-label="Menu" 
+          onClick={() => setOpen((v) => !v)}
+        >
           <span></span>
           <span></span>
           <span></span>

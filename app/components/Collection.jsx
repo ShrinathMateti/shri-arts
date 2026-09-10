@@ -21,22 +21,24 @@ export default function Collection() {
 
   const selectCategory = (cat) => {
     setActive(cat);
-    document.getElementById("collection")?.scrollIntoView({ behavior: "smooth" });
+    document
+      .getElementById("collection")
+      ?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <>
-      {/* ---------- category strip ---------- */}
       <section className="cat-section" id="categories">
         <div className="wrap">
           <div className="section-head">
             <div className="eyebrow-line">
-              <span className="rule"></span>Choose a deity<span className="rule"></span>
+              <span className="rule"></span>Choose a deity
+              <span className="rule"></span>
             </div>
             <h2>Five collections, one lineage of craft</h2>
             <p>
-              Every category spans multiple sizes, materials and finishes — from a compact
-              desk murti to a temple centrepiece.
+              Every category spans multiple sizes, materials and finishes — from
+              a compact desk murti to a temple centrepiece.
             </p>
           </div>
 
@@ -69,12 +71,13 @@ export default function Collection() {
         <div className="wrap">
           <div className="section-head">
             <div className="eyebrow-line">
-              <span className="rule"></span>The collection<span className="rule"></span>
+              <span className="rule"></span>The collection
+              <span className="rule"></span>
             </div>
             <h2>Every murti, by category</h2>
             <p>
-              Filter by deity to explore sizes, materials and finishes across our full
-              showroom inventory.
+              Filter by deity to explore sizes, materials and finishes across
+              our full showroom inventory.
             </p>
           </div>
 
@@ -96,7 +99,9 @@ export default function Collection() {
                 <div className="prod-media">
                   {p.tag && <span className="prod-tag">{p.tag}</span>}
                   <Image
-                    src={photoUrl(p.cat, 500)}
+                    src={
+                      p.img || photoUrl(p.cat, 500)
+                    } /* <--- UPDATE THIS LINE */
                     alt={p.name}
                     fill
                     sizes="(max-width: 640px) 50vw, (max-width: 980px) 33vw, 25vw"
@@ -111,8 +116,18 @@ export default function Collection() {
                       {p.price}
                       <span>incl. packaging</span>
                     </div>
-                    <button className="icon-btn" aria-label={`Enquire about ${p.name}`}>
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <button
+                      className="icon-btn"
+                      aria-label={`Enquire about ${p.name}`}
+                    >
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.8"
+                      >
                         <path d="M5 12h14M13 6l6 6-6 6" />
                       </svg>
                     </button>

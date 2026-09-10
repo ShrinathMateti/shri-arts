@@ -6,7 +6,7 @@ export default function Footer() {
           <div>
             <div className="foot-brand">Shri Arts</div>
             <p>
-              Handcrafted Ganesh, Hanuman, Krishna, Shiva and Durga murtis, sculpted in Jaipur
+              Handcrafted Ganesh, Hanuman, Krishna, Shiva and Durga murtis, sculpted in Solapur
               and shipped across India with insured packaging.
             </p>
           </div>
@@ -23,8 +23,8 @@ export default function Footer() {
           <div>
             <h5>Showroom</h5>
             <ul>
-              <li>Johari Bazaar, Jaipur</li>
-              <li>Rajasthan, India</li>
+              <li>Daji Peth</li>
+              <li>Solapur,India</li>
               <li>Open 10am – 8pm, all days</li>
             </ul>
           </div>
@@ -32,7 +32,7 @@ export default function Footer() {
             <h5>Get in touch</h5>
             <ul>
               <li>+91 98XXX XXXXX</li>
-              <li>orders@shriarts.example</li>
+              <li>orders@shriarts</li>
               <li>WhatsApp catalogue available</li>
             </ul>
           </div>

@@ -10,7 +10,7 @@ export default function CraftBand() {
           </div>
           <h2>Every murti passes through six pairs of hands</h2>
           <p>
-            From clay model to final gilding, our karigars in Jaipur follow Shilpa Shastra
+            From clay model to final gilding, our karigars in Solapur follow Shilpa Shastra
             proportions — the traditional canon of measurement for sacred sculpture.
           </p>
           <div className="feat-list">
